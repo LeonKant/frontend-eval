@@ -10,21 +10,10 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
+import { exercises } from "@/lib/exercisesList";
 import Link from "next/link";
 
-type ExercisesT = {
-  label: string;
-  path: string;
-};
-
 export function AppSidebar() {
-  const exercises: ExercisesT[] = [
-    {
-      label: "FAQ component",
-      path: "faq-component",
-    },
-  ];
-
   return (
     <Sidebar>
       <SidebarHeader />
@@ -34,7 +23,7 @@ export function AppSidebar() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <Link href='/'>
+                  <Link href="/">
                     <span>Home</span>
                   </Link>
                 </SidebarMenuButton>
@@ -46,17 +35,15 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarGroupLabel>Exercises</SidebarGroupLabel>
             <SidebarMenu>
-              {exercises.map((e, ind) => {
-                return (
-                  <SidebarMenuItem key={`${e.path}-${ind}`}>
-                    <SidebarMenuButton asChild>
-                      <Link href={`/${e.path}`}>
-                        <span>{e.label}</span>
-                      </Link>
-                    </SidebarMenuButton>
-                  </SidebarMenuItem>
-                );
-              })}
+              {exercises.map((e, ind) => (
+                <SidebarMenuItem key={`${e.path}-${ind}`}>
+                  <SidebarMenuButton asChild>
+                    <Link href={`/${e.path}`}>
+                      <span>{e.label}</span>
+                    </Link>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
