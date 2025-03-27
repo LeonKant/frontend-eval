@@ -1,18 +1,28 @@
+import { cn } from "@/lib/utils";
 import { PropsWithChildren } from "react";
 
 interface Props {
   header?: string;
+  pageClassName?: string;
+  innerClassName?: string;
 }
 export default function PageTemplate({
   header,
   children,
+  pageClassName,
+  innerClassName,
 }: Props & PropsWithChildren) {
   return (
     <div
-      className={`flex flex-col items-center flex-1 justify-items-center min-h-screen`}
+      className={cn(
+        pageClassName,
+        `flex flex-col items-center flex-1 justify-items-center min-h-screen`
+      )}
     >
-      <h1 className={`font-bold text-3xl`}>{header}</h1>
-      <div className={`flex-1 w-full`}>{children}</div>
+      <h1 className={`font-bold text-3xl my-4`}>{header}</h1>
+      <div className={cn(innerClassName, `flex flex-col flex-1 w-full`)}>
+        {children}
+      </div>
     </div>
   );
 }
