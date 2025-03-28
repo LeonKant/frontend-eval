@@ -9,6 +9,10 @@ const exercises: ExercisesT[] = [
     label: "Countdown Timer",
     path: "countdown-timer",
   },
+  {
+    label: "Mortgage Calculator",
+    path: "mortgage-calc",
+  },
 ];
 
 export { exercises };
