@@ -1,0 +1,19 @@
+/* .mortgage-calc-form {
+} */
+.mortgage-calc-form .input {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 0.25em;
+}
+
+.mortgage-calc-form .button {
+  background-color: white;
+  color: black;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  border-radius: 0.25em;
+  padding: 4px 6px;
+}
