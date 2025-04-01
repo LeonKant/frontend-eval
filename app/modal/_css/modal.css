@@ -1,0 +1,50 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal button {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  background-color: white;
+  padding: 4px;
+  color: black;
+}
+
+.modal button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.modal .modal-background {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  z-index: 100;
+  /* background-color: gray; */
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  inset: 0;
+}
+
+.modal-background.show {
+  display: flex;
+}
+
+.modal .modal-display {
+  color: black;
+  background-color: white;
+  padding: 8px;
+  position: fixed;
+}
+
+.modal-display .x,
+.modal-display .accept-offer {
+  /* .modal-display .x.accept-offer { */
+  background-color: gray;
+  width: fit-content;
+  padding: 4px;
+  color: white;
+}
