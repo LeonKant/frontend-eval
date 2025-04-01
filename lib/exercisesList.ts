@@ -17,6 +17,10 @@ const exercises: ExercisesT[] = [
     label: "Modal Overlay",
     path: "modal",
   },
+  {
+    label: "Memory Game",
+    path: "memory-game",
+  },
 ];
 
 export { exercises };
