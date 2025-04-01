@@ -31,7 +31,8 @@ export default function RootLayout({
       >
         <SidebarProvider>
           <AppSidebar />
-          <main className={`flex flex-col flex-1 min-h-screen my-4 mx-2`}>
+          {/* SidebarProvider already flex container; flex-1 to fit entire page */}
+          <main className={`flex flex-col flex-1 my-4 mx-2`}>
             <SidebarTrigger />
             {children}
           </main>

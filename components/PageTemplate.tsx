@@ -16,7 +16,7 @@ export default function PageTemplate({
     <div
       className={cn(
         pageClassName,
-        `flex flex-col items-center flex-1 justify-items-center min-h-screen`
+        `flex flex-col items-center flex-1 justify-items-center`
       )}
     >
       <h1 className={`font-bold text-3xl my-4`}>{header}</h1>

@@ -13,6 +13,10 @@ const exercises: ExercisesT[] = [
     label: "Mortgage Calculator",
     path: "mortgage-calc",
   },
+  {
+    label: "Modal Overlay",
+    path: "modal",
+  },
 ];
 
 export { exercises };
