@@ -3,7 +3,7 @@ import Modal from "./_components/Modal";
 
 export default function ModalPage() {
   return (
-    <PageTemplate header="Modal" innerClassName="items-center">
+    <PageTemplate header="Modal">
       <Modal />
     </PageTemplate>
   );
