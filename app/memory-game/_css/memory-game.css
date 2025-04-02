@@ -3,8 +3,8 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 2px;
   aspect-ratio: 1;
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  /* height: 1000px; */
+  max-width: 65vh;
+  width: 100%;
 }
 
 .board-tile {
@@ -13,9 +13,8 @@
   align-items: center;
   background-color: gray;
   min-height: 2em;
-
-  /* height: 64px; */
 }
+
 .board-tile:hover {
   cursor: pointer;
   opacity: 0.75;
@@ -25,12 +24,14 @@
   display: flex;
   justify-content: center;
 }
+
 .play-again {
   padding: 4px 6px;
   background-color: white;
   color: black;
   border-radius: 0.25em;
 }
+
 .play-again:hover {
   cursor: pointer;
   opacity: 0.75;
