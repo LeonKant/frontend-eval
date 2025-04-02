@@ -21,6 +21,10 @@ const exercises: ExercisesT[] = [
     label: "Memory Game",
     path: "memory-game",
   },
+  {
+    label: "Undoable Counter",
+    path: "undoable-counter",
+  },
 ];
 
 export { exercises };
