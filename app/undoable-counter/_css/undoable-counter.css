@@ -1,0 +1,48 @@
+.undo-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.undo-counter h1 {
+  font-weight: 600;
+}
+
+.undo-counter button {
+  color: black;
+  background-color: white;
+  padding: 6px;
+  border-radius: 0.25em;
+}
+.undo-counter button:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+.undo-counter button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button-cont {
+  display: flex;
+  gap: 8px;
+}
+
+.main-buttons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.main-history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.history-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px;
+  border: solid white 1px;
+}
