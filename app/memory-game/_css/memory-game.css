@@ -1,0 +1,38 @@
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2px;
+  aspect-ratio: 1;
+  max-width: 65vh;
+  width: 100%;
+}
+
+.board-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  min-height: 2em;
+}
+
+.board-tile:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.play-again-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.play-again {
+  padding: 4px 6px;
+  background-color: white;
+  color: black;
+  border-radius: 0.25em;
+}
+
+.play-again:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
