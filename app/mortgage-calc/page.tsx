@@ -3,7 +3,7 @@ import MortgageCalculator from "./_components/MortgageCalculator";
 
 export default function MortgageCalcPage() {
   return (
-    <PageTemplate header="Mortgage Calculator" innerClassName="">
+    <PageTemplate header="Mortgage Calculator">
       <MortgageCalculator />
     </PageTemplate>
   );

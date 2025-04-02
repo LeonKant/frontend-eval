@@ -18,7 +18,7 @@ export default function FAQPage() {
     },
   ];
   return (
-    <PageTemplate header="FAQ Component" innerClassName="items-center">
+    <PageTemplate header="FAQ Component">
       <FAQComponent faqs={faqs} />
     </PageTemplate>
   );

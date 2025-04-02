@@ -16,11 +16,11 @@ export default function PageTemplate({
     <div
       className={cn(
         pageClassName,
-        `flex flex-col items-center flex-1 justify-items-center`
+        `flex flex-col items-center flex-1 justify-center`
       )}
     >
       <h1 className={`font-bold text-3xl my-4`}>{header}</h1>
-      <div className={cn(innerClassName, `flex flex-col flex-1 w-full`)}>
+      <div className={cn(innerClassName, `flex flex-col flex-1 w-full items-center`)}>
         {children}
       </div>
     </div>
