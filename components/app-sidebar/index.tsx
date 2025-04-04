@@ -4,14 +4,13 @@ import {
   SidebarFooter,
   SidebarGroup,
   SidebarGroupContent,
-  SidebarGroupLabel,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import { exercises } from "@/lib/exercisesList";
 import Link from "next/link";
+import ExerciseTabs from "./ExerciseTabs";
 
 export function AppSidebar() {
   return (
@@ -31,22 +30,7 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
         </SidebarGroup>
-        <SidebarGroup>
-          <SidebarGroupContent>
-            <SidebarGroupLabel>Exercises</SidebarGroupLabel>
-            <SidebarMenu>
-              {exercises.map((e, ind) => (
-                <SidebarMenuItem key={`${e.path}-${ind}`}>
-                  <SidebarMenuButton asChild>
-                    <Link href={`/${e.path}`}>
-                      <span>{e.label}</span>
-                    </Link>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              ))}
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
+        <ExerciseTabs />
       </SidebarContent>
       <SidebarFooter />
     </Sidebar>

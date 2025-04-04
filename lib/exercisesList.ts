@@ -1,34 +1,43 @@
 import { ExercisesT } from "@/types/exercises";
 
-const exercises: ExercisesT[] = [
-  {
-    label: "FAQ component",
-    path: "faq-component",
-  },
-  {
-    label: "Countdown Timer",
-    path: "countdown-timer",
-  },
-  {
-    label: "Mortgage Calculator",
-    path: "mortgage-calc",
-  },
-  {
-    label: "Modal Overlay",
-    path: "modal",
-  },
-  {
-    label: "Memory Game",
-    path: "memory-game",
-  },
-  {
-    label: "Undoable Counter",
-    path: "undoable-counter",
-  },
-  {
-    label: "Shopping List",
-    path: "shopping-list",
-  },
-];
+const exercises: {
+  easy: ExercisesT[];
+  medium: ExercisesT[];
+  hard: ExercisesT[];
+} = {
+  easy: [
+    {
+      label: "FAQ component",
+      path: "faq-component",
+    },
+    {
+      label: "Countdown Timer",
+      path: "countdown-timer",
+    },
+    {
+      label: "Mortgage Calculator",
+      path: "mortgage-calc",
+    },
+    {
+      label: "Modal Overlay",
+      path: "modal",
+    },
+  ],
+  medium: [
+    {
+      label: "Memory Game",
+      path: "memory-game",
+    },
+    {
+      label: "Undoable Counter",
+      path: "undoable-counter",
+    },
+    {
+      label: "Shopping List",
+      path: "shopping-list",
+    },
+  ],
+  hard: [],
+};
 
 export { exercises };
