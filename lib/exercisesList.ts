@@ -25,6 +25,10 @@ const exercises: ExercisesT[] = [
     label: "Undoable Counter",
     path: "undoable-counter",
   },
+  {
+    label: "Shopping List",
+    path: "shopping-list",
+  },
 ];
 
 export { exercises };

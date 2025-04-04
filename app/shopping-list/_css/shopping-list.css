@@ -1,0 +1,51 @@
+.shopping-main {
+  width: fit-content;
+}
+.shopping-search {
+  width: fit-content;
+  position: relative;
+}
+.shopping-search input {
+  border: solid gray 1px;
+  border-radius: 0.25em;
+}
+
+.search-list-main {
+  background-color: white;
+  color: black;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+.search-list-main.hide {
+  display: none;
+}
+
+.search-list-item:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.shopping-list {
+  width: 100%;
+}
+.shopping-list .shopping-list-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.shopping-list .shopping-list-item .x:hover {
+  cursor: pointer;
+}
+.shopping-list .shopping-list-item .item-checkbox {
+  display: flex;
+  gap: 8px;
+}
+
+.shopping-list-item.checked {
+  color: lightgray;
+}
+
+.shopping-list-item.checked .item-value {
+  text-decoration: line-through;
+}
