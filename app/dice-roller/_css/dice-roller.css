@@ -1,0 +1,48 @@
+.dice-roller {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.dice-roller button {
+  background-color: white;
+  color: black;
+  border-radius: 0.25em;
+}
+.dice-roller-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 128px;
+}
+.dice-roller-form input[type="number"] {
+  border-color: lightgrey;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0.25em;
+  padding-left: 0.5em;
+}
+.dice-cont {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 720px;
+  justify-content: center;
+}
+.dice {
+  display: grid;
+  /* grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  width: 64px;
+  height: 64px;
+  gap: 8px;
+  padding: 8px;
+}
+
+.dot {
+  border-radius: 1rem;
+}
+.dot.black {
+  background-color: black;
+}

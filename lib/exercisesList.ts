@@ -36,6 +36,10 @@ const exercises: {
       label: "Shopping List",
       path: "shopping-list",
     },
+    {
+      label: "Dice Roller",
+      path: "dice-roller",
+    },
   ],
   hard: [],
 };
