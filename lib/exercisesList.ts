@@ -40,6 +40,10 @@ const exercises: {
       label: "Dice Roller",
       path: "dice-roller",
     },
+    {
+      label: "Data fetch and visualization",
+      path: "data-fetch-vis",
+    },
   ],
   hard: [],
 };
