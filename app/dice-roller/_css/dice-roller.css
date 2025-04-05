@@ -31,7 +31,6 @@
 }
 .dice {
   display: grid;
-  /* grid-template-rows: repeat(3, 1fr); */
   grid-template-columns: 1fr 1fr 1fr;
   background-color: white;
   width: 64px;
