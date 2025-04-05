@@ -40,7 +40,7 @@ export default function ExerciseTabs() {
                 <CollapsibleTrigger asChild className="cursor-pointer">
                   <SidebarMenuButton>
                     {tabTitle}
-                    <ChevronDown className="ml-auto transition-transform group-data-[state=closed]/collapsible:rotate-180" />
+                    <ChevronDown className="ml-auto transition-transform group-data-[state=closed]/collapsible:-rotate-90" />
                   </SidebarMenuButton>
                 </CollapsibleTrigger>
                 <CollapsibleContent>
