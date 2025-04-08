@@ -20,6 +20,8 @@ import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 export default function ExerciseTabs() {
+  const difficultyRoutes: string[] = ["easy", "medium", "hard"];
+
   const tabs: { tabTitle: string; tabData: ExercisesT[] }[] = [
     { tabTitle: "Easy", tabData: exercises.easy },
     { tabTitle: "Medium", tabData: exercises.medium },
@@ -45,10 +47,10 @@ export default function ExerciseTabs() {
                 </CollapsibleTrigger>
                 <CollapsibleContent>
                   <SidebarMenuSub>
-                    {tabData.map(({ label, path }, tind) => (
+                    {tabData.map(({ label, path }) => (
                       <SidebarMenuSubItem key={`${path.toLowerCase()}-${ind}`}>
                         <SidebarMenuSubButton asChild>
-                          <Link href={`/${path}`}>
+                          <Link href={`/${difficultyRoutes[ind]}/${path}`}>
                             <span>{label}</span>
                           </Link>
                         </SidebarMenuSubButton>
