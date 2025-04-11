@@ -1,2 +1,23 @@
-.cont-2fa {
+.form-2fa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.form-2fa button {
+  color: black;
+  background-color: white;
+  padding: 6px 8px;
+  border-radius: 0.25rem;
+}
+.main-inputs {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
+}
+.main-inputs input {
+  border: solid lightgrey 1px;
+  border-radius: 0.25rem;
+  max-width: 1.5em;
+  text-align: center;
 }
