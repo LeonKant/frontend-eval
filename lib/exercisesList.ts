@@ -48,6 +48,10 @@ const exercises: {
       label: "Multi-step form",
       path: "multi-step-form",
     },
+    {
+      label: "Two-factor code input",
+      path: "2fa-input",
+    },
   ],
   hard: [],
 };
