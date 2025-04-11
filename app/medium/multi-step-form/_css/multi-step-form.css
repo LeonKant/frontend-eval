@@ -1,0 +1,44 @@
+.mult-step-form-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  min-height: 144px;
+}
+
+.mult-step-form-cont input {
+  border: solid lightgrey 1px;
+  border-radius: 0.25em;
+  width: 100%;
+}
+
+.mult-step-form-cont button {
+  background-color: white;
+  color: black;
+  padding: 6px 8px;
+  border-radius: 0.25em;
+}
+.mult-step-form-cont .back-button {
+  background-color: black;
+  color: white;
+  padding: 0;
+}
+
+.mult-step-form-cont button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+.mult-step-form-cont button:disabled {
+  opacity: 0.5;
+}
+
+.ms-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+}

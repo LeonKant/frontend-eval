@@ -44,6 +44,10 @@ const exercises: {
       label: "Data fetch and visualization",
       path: "data-fetch-vis",
     },
+    {
+      label: "Multi-step form",
+      path: "multi-step-form",
+    },
   ],
   hard: [],
 };
