@@ -1,5 +1,12 @@
 "use client";
-import { ChangeEvent, FormEvent, KeyboardEvent, useRef, useState } from "react";
+import {
+  ChangeEvent,
+  ClipboardEvent,
+  FormEvent,
+  KeyboardEvent,
+  useRef,
+  useState,
+} from "react";
 import "../_css/2fa-input.css";
 
 interface Props {
@@ -7,8 +14,8 @@ interface Props {
   code: string;
 }
 export default function Input2FA({ numInputs, code }: Props) {
-  const [inputState, setInputState] = useState<Array<null | string>>(
-    new Array(numInputs).fill(null)
+  const [inputState, setInputState] = useState<Array<string>>(
+    new Array(numInputs).fill(null).map(() => "")
   );
   const [focusState, setFocusState] = useState<number>(0);
   const inputRefs = new Array(numInputs)
@@ -57,6 +64,21 @@ export default function Input2FA({ numInputs, code }: Props) {
     e.preventDefault();
     alert(inputState?.join("") === code ? "Correct code" : "Incorrect Code");
   };
+  const handlePaste = (e: ClipboardEvent<HTMLInputElement>) => {
+    const data = e.clipboardData.getData("text");
+    const newState = [];
+    for (let i = 0; i < numInputs; ++i) {
+      const ref = inputRefs[i];
+      if (ref?.current) {
+        ref.current.value = data[i] || "";
+      }
+      newState.push(data[i]);
+    }
+    setInputState(newState);
+    setFocusState(Math.min(numInputs - 1, data.length - 1));
+  };
+
+  const handleFocus = (ind: number) => () => setFocusState(ind);
 
   return (
     <div className="cont-2fa">
@@ -65,12 +87,13 @@ export default function Input2FA({ numInputs, code }: Props) {
           {inputState.map((_, ind) => (
             <input
               required
+              onPaste={handlePaste}
               ref={inputRefs[ind]}
               key={`${ind}-input`}
               type="text"
               pattern="[0-9]{1}"
               maxLength={1}
-              onFocus={() => setFocusState(ind)}
+              onFocus={handleFocus(ind)}
               onKeyDown={handleKeyDown(ind)}
               onChange={handleChange(ind)}
             />
