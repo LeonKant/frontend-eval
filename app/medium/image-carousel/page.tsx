@@ -1,3 +1,4 @@
+"use client";
 import PageTemplate from "@/components/PageTemplate";
 import ImageCarousel from "./_components/ImageCarousel";
 
