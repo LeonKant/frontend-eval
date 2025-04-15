@@ -52,6 +52,10 @@ const exercises: {
       label: "Two-factor code input",
       path: "2fa-input",
     },
+    {
+      label: "Image Carousel",
+      path: "image-carousel",
+    },
   ],
   hard: [],
 };

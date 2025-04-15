@@ -1,0 +1,22 @@
+.image-caro-cont {
+  position: relative;
+}
+.image-caro-cont .caro-button-cont {
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  /* inset: 0; */
+  top: 50%;
+}
+.caro-button {
+  /* background-color: black; */
+  padding: 1em 1.25em;
+  border-radius: 0.75rem;
+  background-color: rgba(1, 1, 1, 0.75);
+}
+.caro-button:hover {
+  background-color: rgba(1, 1, 1, 0.5);
+  cursor: pointer;
+}
