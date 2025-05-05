@@ -57,7 +57,12 @@ const exercises: {
       path: "image-carousel",
     },
   ],
-  hard: [],
+  hard: [
+    {
+      label: "Job Board",
+      path: "job-board",
+    },
+  ],
 };
 
 export { exercises };
