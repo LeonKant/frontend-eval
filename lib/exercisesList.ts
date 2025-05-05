@@ -62,10 +62,13 @@ const exercises: {
       label: "Selectable Grid",
       path: "select-grid",
     },
-  
     {
       label: "Job Board",
       path: "job-board",
+    },
+    {
+      label: "Connect Four",
+      path: "connect-four",
     },
   ],
 };
