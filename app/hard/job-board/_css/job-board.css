@@ -1,3 +1,47 @@
-.job-board-cont{
-  display: block;
+.job-board-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.job-board-cont {
+  display: grid;
+  /* flex-direction: ; */
+  /* flex-wrap: wrap; */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.button-cont button {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+  border-radius: 0.5rem;
+}
+.button-cont button:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.job-card-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 256px;
+  gap: 16px;
+  border: 1px solid;
+  padding: 1em;
+  min-width: fit-content;
+  justify-content: space-between;
+}
+.job-card-cont .title {
+  font-size: x-large;
+}
+
+.job-card-cont:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.button-cont {
+  display: flex;
+  justify-content: center;
 }
