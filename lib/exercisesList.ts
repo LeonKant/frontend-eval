@@ -59,6 +59,11 @@ const exercises: {
   ],
   hard: [
     {
+      label: "Selectable Grid",
+      path: "select-grid",
+    },
+  
+    {
       label: "Job Board",
       path: "job-board",
     },
