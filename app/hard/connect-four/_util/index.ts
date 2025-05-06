@@ -5,6 +5,9 @@ export const getInitBoardState = () =>
 
 export const getInitPointersState = () => Array.from({ length: 6 }, () => 0);
 
+export const checkIfDraw = (dropPointersState: number[]) =>
+  dropPointersState.every((val) => val === 6);
+
 export const checkIfWinner = (
   playerTurnState: boolean,
   r: number,

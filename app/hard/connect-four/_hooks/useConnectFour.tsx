@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {
+  checkIfDraw,
   checkIfWinner,
   getInitBoardState,
   getInitPointersState,
@@ -13,13 +14,10 @@ const useConnectFour = () => {
 
   // const dropPointers = useRef<number[]>(Array.from({ length: 7 }, () => 0));
   const [dropPointersState, setDropPointersState] = useState<number[]>(
-  getInitPointersState()
+    getInitPointersState()
   );
   const [gameOverState, setGameOverState] = useState<boolean>(false);
   const [drawState, setDrawState] = useState<boolean>(false);
-
-  const checkIfDraw = (dropPointersState: number[]) =>
-    dropPointersState.every((val) => val === 6);
 
   const handleDrop = (cind: number) => () => {
     if (dropPointersState[cind] >= 6) {
